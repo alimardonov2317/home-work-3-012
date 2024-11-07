@@ -1,0 +1,47 @@
+.date{
+    &__text{
+        text-align: center;
+        background: #000;
+        color: #FFF;
+        padding: 20px;
+        line-height: 23px;
+    }
+    &__text-title{
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin-top: 30px;
+    }
+    &__card{
+        background: #231d1d;
+        padding: 15px;
+        color: #FFF;
+    }
+    &__card-title{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #0c4eb8;
+    }
+    &__card-info{
+        color: #86ff98;
+        margin: 10px 0;
+        line-height: 23px;
+        font-size: 14px;
+        p{
+        letter-spacing: 1.5px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .date{
+        &__card-wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+}
